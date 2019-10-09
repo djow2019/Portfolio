@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- file information -->
+	<head>
+	
+		<!-- name of the website -->
+		<title>Derek Jow Portfolio</title>
+		
+		<!-- links to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="portfolio.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- compatibility checking -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- scripts for bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	<!-- content of the page -->
+	<body>
+	
+		<!-- bootstrap navigation bar-->
+		<nav class = "navbar navbar-transparent">
+		
+			<!-- container of elements in the navbar -->
+			<div class="container-fluid">
+				
+				<!-- bold text on the left side -->
+				<div class ="navbar-header">
+				
+					<!-- toggle button that appears on small screens -->
+					<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+					</button>
+				
+					<h1> Derek Jow </h1>
+					<p>derek.jow@gmail.com</p>
+					<p>650-293-7378</p>
+				</div>
+				
+				<!-- Collapse if screen is too small -->
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				
+					<!-- elements on the right side of the bar -->
+					<ul class = "nav navbar-nav navbar-right" id = "navElements">
+						<li> <a href="index.html"><br><h3>Home</h3></a></li>
+						
+						<li class = "dropdown">
+							<a class = "dropdown-toggle" data-toggle="dropdown" href="#"><br><h3>About</h3></a>
+							<ul class = "dropdown-menu navbar-inverse">
+								<li class = "myDropdown"><a href="about.html">Biography</a></li>
+								<li class = "myDropdown"><a href="education.html">Education</a></li>
+								<li class = "myDropdown"><a href="work.html">Work Experience</a></li>
+								<li class = "myDropdown"><a href="volunteer.html">Volunteer Experience</a></li>
+								<li class = "myDropdown"><a href="skills.html">Skills</a></li>
+							</ul>
+						</li>
+						
+						<li> <a href="activities.html"><br><h3>Activities</h3></a></li>
+						<li> <a href="honors.html"><br><h3>Honors</h3></a></li>
+						<li> <a href="contact.html"><br><h3>Contact</h3></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	
+		<!-- wrapper for the text -->
+		<div class="container">
+		
+			<h1>Activities</h1>
+			
+			<!-- text next to picture -->
+			<div class="activities">
+			
+				<h3> Hacktech </h3>
+				<h4>Pasadena, February 2016</h4>
+				<text id = "abouttext">
+				
+					<!-- picture in top right -->
+					<img id="hspic" src="images/hammer.png" />
+				
+					Hacktech is a 36 hour programming marathon at California 
+					Institute of Technology. <br><br>
+					
+					<!-- picture in top left -->
+					<img id="profilepic" src="images/youniversity.png" />
+					
+					During Hacktech, I created a mobile app game called Youniversity with 
+					a small team. It is based off many other traditional tycoon games where 
+					you construct buildings on a scrollable 2D grid-like map. After 
+					constructing buildings, students will come to your university and give 
+					you money! 
+					
+					<!-- picture in top right -->
+					<img id="hspic" src="images/gym.png" />
+					<br>
+					
+					<a class="gitlinks" href="https://github.com/djow2019/Youniversity">Github</a>
+					
+				</text>
+				
+				<h3> National Society of Collegiate Scholars </h3>
+				<h4>September 2015 - Present</h4>
+				
+				<!-- picture in top right -->
+				<img id="hspic" src="images/nscs.png" />
+				
+				<text id = "abouttext">
+				
+					NSCS is an honor society of undergraduate college students who have an 
+					excellent gpa.
+					
+				</text>
+				
+				<h3> Video Game Programming Club </h3>
+				<h4>September 2014 - May 2015</h4>
+				
+				<text id = "abouttext">
+				
+					As one of the founding members of the video game programming club at Serra, 
+					I managed our small group over the development of a small rpg nicknamed 
+					JavaJesus. 
+					
+					<img id="profilepic" src="images/javajesustitle.png" />
+					
+					I taught the members how to use Git and how to contribute to the 
+					project. “JavaJesus” takes place in post apocalyptic San Francisco/Bay Area 
+					and is mostly a sandbox. Although development stopped after graduation, I hope 
+					to continue it sometime in the future! 
+					
+					<img id="hspic" src="images/javajesusgame.png" />
+					
+					
+					<br><br>
+					
+					<a class = "gitlinks" href="https://github.com/djow2019/JavaJesus">Github</a>
+					
+				</text>
+				
+				<h3> HP CodeWars </h3>
+				<h4>Palo Alto, March 2015</h4>
+				<text id = "abouttext">
+				
+					Code Wars is a first-class computer programming competition for high school 
+					students. It presents students with programming challenges in a high-tech setting.
+					
+				</text>
+			
+			</div>
+			
+		</div>
+		
+	<body>
+</html>

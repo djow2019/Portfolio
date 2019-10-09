@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- file information -->
+	<head>
+	
+		<!-- name of the website -->
+		<title>Derek Jow Portfolio</title>
+		
+		<!-- links to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="portfolio.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- compatibility checking -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/7.1.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+		
+		<!-- scripts for bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- javascript -->
+		<script>
+		
+			// index of the slideshow display
+			var index = 0;
+			
+			// displays the slideshow
+			// num is the change in index to display
+			function display(num) {
+			
+				// array of images and descriptions
+				var images = document.getElementsByClassName("slideshow");
+				var descriptions = document.getElementsByClassName("description");
+				
+				index += num;
+				
+				// wrap the index around
+				if (index > images.length - 1) {
+					index = 0;
+				}
+				else if (index < 0) {
+					index = images.length - 1;
+				}
+					
+				// hide all images...
+				for (var i = 0; i < images.length; i++) {
+				
+					images[i].style.display = "none";
+					descriptions[i].style.display = "none";
+				
+				}
+				
+				// ...except for the current index
+				images[index].style.display = "block";
+				descriptions[index].style.display = "block";
+			
+			}
+		
+		</script>
+		
+	<!-- content of the page -->
+	<body onload="display(0)">
+	
+		<!-- bootstrap navigation bar-->
+		<nav class = "navbar navbar-transparent">
+		
+			<!-- container of elements in the navbar -->
+			<div class="container-fluid">
+				
+				<!-- bold text on the left side -->
+				<div class ="navbar-header">
+				
+					<!-- toggle button that appears on small screens -->
+					<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+					</button>
+				
+					<h1> Derek Jow </h1>
+					<p>derek.jow@gmail.com</p>
+					<p>650-293-7378</p>
+				</div>
+				
+				<!-- Collapse if screen is too small -->
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				
+					<!-- elements on the right side of the bar -->
+					<ul class = "nav navbar-nav navbar-right" id = "navElements">
+						<li> <a href="index.html"><br><h3>Home</h3></a></li>
+						
+						<li class = "dropdown">
+							<a class = "dropdown-toggle" data-toggle="dropdown" href="#"><br><h3>About</h3></a>
+							<ul class = "dropdown-menu navbar-inverse">
+								<li class = "myDropdown"><a href="about.html">Biography</a></li>
+								<li class = "myDropdown"><a href="education.html">Education</a></li>
+								<li class = "myDropdown"><a href="work.html">Work Experience</a></li>
+								<li class = "myDropdown"><a href="volunteer.html">Volunteer Experience</a></li>
+								<li class = "myDropdown"><a href="skills.html">Skills</a></li>
+							</ul>
+						</li>
+						
+						<li> <a href="activities.html"><br><h3>Activities</h3></a></li>
+						<li> <a href="honors.html"><br><h3>Honors</h3></a></li>
+						<li> <a href="contact.html"><br><h3>Contact</h3></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	
+		<!-- wrapper for the slideshow -->
+		<div class="container">
+			<img class="slideshow" src="images/stanford.jpg" />
+			<img class="slideshow" src="images/ucsd.png" />
+			<img class="slideshow" src="images/UCSD_Seal.png"/>
+			<img class="slideshow" src="images/warren_logo.png"/>
+			<img class="slideshow" src="images/warren.png" />
+			<img class="slideshow" src="images/sanfrancisco.png" />
+			<img class="slideshow" src="images/oracle.png" />
+			<img class="slideshow" src="images/serra.png" />
+			<img class="slideshow" src="images/church.png" />
+			<img class="slideshow" src="images/dna.png" />
+			<img class="slideshow" src="images/code.png" />
+			<button class="leftButton" onclick="display(-1)">&#10094;</button>
+			<button class="rightButton" onclick="display(1)">&#10095;</button>
+		</div>
+		
+		<!-- text at the bottom of the page -->
+		<div class="footer">
+			<text class = "description">I am currently attending Stanford University to pursue an M.S. in Biomedical Informatics</text>
+			<text class = "description">I graduated from UCSD with a B.S. in Computer Science w/ Specialization in Bioinformatics</text>
+			<text class = "description">Here is a picture of the UCSD logo</text>
+			<text class = "description">I am in Warren College at UCSD</text>
+			<text class = "description">Here is a picture of Warren College</text>
+			<text class = "description">This is my hometown - San Francisco Bay Area!</text>
+			<text class = "description">More specifically, Redwood Shores</text>
+			<text class = "description">I went to Serra High School in San Mateo, California</text>
+			<text class = "description">Here is a picture of my local parish, Saint Matthew</text>
+			<text class = "description">This is a picture of DNA - my target of interest</text>
+			<text class = "description">I enjoy coding in my sparetime and studying computer science</text>
+		</div>
+	<body>
+</html>

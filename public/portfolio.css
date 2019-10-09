@@ -1,0 +1,148 @@
+/* Creates the banner image and gradient of the background of the page */
+body {
+	
+	background: url("images/banner.png") repeat-x left top, url("images/background.png") no-repeat fixed;
+	/*url("images/banner.png") repeat-x left top, linear-gradient(black, white, black) no-repeat fixed;*/
+}
+
+/* Nav bar elements white text */
+#navElements li a{
+	color: white;
+}
+
+/* Nav bar elements slight black highlight when hovered */
+#navElements li a:hover { 
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Background of active dropdown menu */
+.navbar .nav > li.dropdown.open > a {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown background on navbar */
+.myDropdown {
+	background-color: rgba(24, 64, 116, 1);
+}
+
+/* Slideshow text */
+.description {
+	font-family: "Georgia", serif;
+	font-size: 25px;
+}
+
+/* Change header fonts to serif */
+.container h2, .container h3, .container h4, .container h5, .navbar {
+	font-family: "Georgia", serif;
+	border-bottom: 1px solid; 
+}
+
+/* Special properties for title text */
+.container h1 {
+	font-family: "Georgia", serif;
+	border-bottom: 2px solid; 
+	text-align: center;
+	font-size: 50px;
+}
+
+/* Color of text at bottom */
+.container-fluid {
+	color: white;
+}
+
+/* Dimensions of the slideshow */
+.container {
+	width: 50%;
+	position: relative;
+	margin: auto;
+	margin-top:50px;
+}
+
+/* Clears the slideshow in the beginning */
+.slideshow {
+	display: none;
+	width: 100%;
+}
+
+/* Aesthetics of the buttons in the slideshow */
+.leftButton, .rightButton {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	cursor: pointer;
+	transition: 0.5s ease;
+	border-radius: 0 3px 3px 0;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	border-color: transparent;
+}
+
+/* Button hover effects */
+.leftButton:hover, .rightButton:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slight offset for right button */
+.rightButton {
+	right: 14px;
+}
+
+/* How the text at the bottom looks */
+.footer {
+	width: 100%;
+	text-align:center;
+	color:white;
+}
+
+/* Floating allows placement of text next to it */
+#profilepic {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Floating allows placement of text next to it */
+#hspic {
+	float: right;
+	margin-right: 10px;
+}
+
+#othertext {
+	font-family: "Georgia", serif;
+	font-size: 22px;
+}
+
+#abouttext {
+	font-family: "Georgia", serif;
+	font-size: 20px;
+}
+
+/* Format of the tables */
+table {
+	width: 100%;
+	font-family: "Georgia", serif;
+	border-collapse: collapse;
+}
+
+/* Cell properties */
+th, td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 8px;
+}
+
+/* Base color of table */
+tr {
+	background-color: #ffffff;
+}
+
+/* Shade every other row */
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+/* Links to github on activities page */
+.gitlinks {
+	color: black;
+}

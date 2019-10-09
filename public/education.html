@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- file information -->
+	<head>
+	
+		<!-- name of the website -->
+		<title>Derek Jow Portfolio</title>
+		
+		<!-- links to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="portfolio.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- compatibility checking -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- scripts for bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	<!-- content of the page -->
+	<body>
+	
+		<!-- bootstrap navigation bar-->
+		<nav class = "navbar navbar-transparent">
+		
+			<!-- container of elements in the navbar -->
+			<div class="container-fluid">
+				
+				<!-- bold text on the left side -->
+				<div class ="navbar-header">
+				
+					<!-- toggle button that appears on small screens -->
+					<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+					</button>
+				
+					<h1> Derek Jow </h1>
+					<p>derek.jow@gmail.com</p>
+					<p>650-293-7378</p>
+				</div>
+				
+				<!-- Collapse if screen is too small -->
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				
+					<!-- elements on the right side of the bar -->
+					<ul class = "nav navbar-nav navbar-right" id = "navElements">
+						<li> <a href="index.html"><br><h3>Home</h3></a></li>
+						
+						<li class = "dropdown">
+							<a class = "dropdown-toggle" data-toggle="dropdown" href="#"><br><h3>About</h3></a>
+							<ul class = "dropdown-menu navbar-inverse">
+								<li class = "myDropdown"><a href="about.html">Biography</a></li>
+								<li class = "myDropdown"><a href="education.html">Education</a></li>
+								<li class = "myDropdown"><a href="work.html">Work Experience</a></li>
+								<li class = "myDropdown"><a href="volunteer.html">Volunteer Experience</a></li>
+								<li class = "myDropdown"><a href="skills.html">Skills</a></li>
+							</ul>
+						</li>
+						
+						<li> <a href="activities.html"><br><h3>Activities</h3></a></li>
+						<li> <a href="honors.html"><br><h3>Honors</h3></a></li>
+						<li> <a href="contact.html"><br><h3>Contact</h3></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	
+		<!-- wrapper for the bio -->
+		<div class="container">
+			
+			<h1>Education</h1>
+			
+			<h2>University of California, San Diego</h2>
+			
+			<text id = "othertext"> Jacob's School of Engineering; GPA: 3.9<br>
+			B.S. Computer Science & Bioinformatics 2019 <br>
+			</text>
+			
+			<!-- picture in top left -->
+			<img id="profilepic" src="images/geisel.png" />
+			
+			<p></p>
+			
+			<p id="abouttext">
+			At UCSD, I am studying Computer Science with a specialization in Bioinformatics. I have taken extensive
+			courses in Java, C, C++. I have experience with creating Data Structures and using BASH on linux 
+			systems. My skillset also includes using Vim, Git, Makefiles, Shell scripts, and XML, with a basic 
+			understanding of JUnit, Ant, and Bugzilla. Furthermore, I have experience with HTML, CSS, and 
+			Javascript.
+			
+			<br> <br>
+ 
+			While my primary focus is Computer Science, I have an extreme passion for  biology so I decided to 
+			specialize in bioinformatics so I can do research in the medical field using my skillset as a 
+			computer scientist.
+			
+			</p>
+			
+			<h2>Junipero Serra High School</h2>
+			
+			<text id = "othertext">High School Diploma; GPA: 4.5<br>
+			August 2011 - May 2015<br>
+			</text>
+			
+			<!-- picture in top right -->
+			<img id="hspic" src="images/serrahs.png" />
+			
+			<p></p>
+			
+			<p id="abouttext">
+			At Junipero Serra High School, I primarily focused on my education by taking AP classes focusing on 
+			computer science and mathematics. As well as studying, I also did rowing (crew) after school and 
+			started a coding club my senior year with classmates in my AP Computer Science class. Our focus
+			was game design, and we created a small open world game we nicknamed JavaJesus - a post apocalyptic 
+			rpg that takes place in San Francisco and much of the bay area. It was a fun project that I hope to
+			continue someday!
+			
+			</p>
+			
+			<h2>Saint Matthew Catholic School</h2>
+			
+			<text id = "othertext">Elementary School Diploma<br>
+			August 2003 - May 2011<br>
+			</text>
+			
+			<!-- picture in top left -->
+			<img id="profilepic" src="images/bell.png" />
+			
+			<p></p>
+			
+			<p id="abouttext">
+			Elementary school at Saint Matthew Catholic School in San Mateo.
+			</p>
+
+			
+		</div>
+		
+	<body>
+</html>

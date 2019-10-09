@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- file information -->
+	<head>
+	
+		<!-- name of the website -->
+		<title>Derek Jow Portfolio</title>
+		
+		<!-- links to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="portfolio.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- compatibility checking -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- scripts for bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	<!-- content of the page -->
+	<body>
+	
+		<!-- bootstrap navigation bar-->
+		<nav class = "navbar navbar-transparent">
+		
+			<!-- container of elements in the navbar -->
+			<div class="container-fluid">
+				
+				<!-- bold text on the left side -->
+				<div class ="navbar-header">
+				
+					<!-- toggle button that appears on small screens -->
+					<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+						<span class="icon-bar navbar-inverse"></span>
+					</button>
+				
+					<h1> Derek Jow </h1>
+					<p>derek.jow@gmail.com</p>
+					<p>650-293-7378</p>
+				</div>
+				
+				<!-- Collapse if screen is too small -->
+				<div class = "collapse navbar-collapse" id="myNavbar">
+				
+					<!-- elements on the right side of the bar -->
+					<ul class = "nav navbar-nav navbar-right" id = "navElements">
+						<li> <a href="index.html"><br><h3>Home</h3></a></li>
+						
+						<li class = "dropdown">
+							<a class = "dropdown-toggle" data-toggle="dropdown" href="#"><br><h3>About</h3></a>
+							<ul class = "dropdown-menu navbar-inverse">
+								<li class = "myDropdown"><a href="about.html">Biography</a></li>
+								<li class = "myDropdown"><a href="education.html">Education</a></li>
+								<li class = "myDropdown"><a href="work.html">Work Experience</a></li>
+								<li class = "myDropdown"><a href="volunteer.html">Volunteer Experience</a></li>
+								<li class = "myDropdown"><a href="skills.html">Skills</a></li>
+							</ul>
+						</li>
+						
+						<li> <a href="activities.html"><br><h3>Activities</h3></a></li>
+						<li> <a href="honors.html"><br><h3>Honors</h3></a></li>
+						<li> <a href="contact.html"><br><h3>Contact</h3></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	
+		<!-- wrapper for the text -->
+		<div class="container">
+		
+			<h1>Work Experience</h1>
+			
+			<!-- text next to picture -->
+			<div class="work">
+			
+				<h3> Software Engineer, Pinn </h3>
+				<h4>Redwood City, CA — June 2015 - September 2015</h4>
+				
+				<!-- picture in top right -->
+				<img id="hspic" src="images/pinn.png" />
+					
+				<text id = "abouttext">
+				
+					During the summer, I was the lead android developer at 
+					the startup company, Pinn. Pinn is a mobile payment company 
+					that aims to revolutionize the way we process transactions. 
+					Rather than use credit cards, Pinn strives to make all transactions 
+					simple by using our phones with verification as easy as a 4 digit Pinn.
+					
+					<br/> <br/>
+					
+					I worked in a small team developing the front-end application. I gained 
+					valuable experience with designing user interfaces, programming with 
+					bluetooth technology, and using http with RESTful API with android devices. 
+					
+				</text>
+				
+				<h3> Barista, MO Tea, LLC dba Comebuy </h3>
+				<h4>Hillsdale Mall, San Mateo, CA — August 2014 - September 2015</h4>
+				
+				<!-- picture in top left -->
+				<img id="profilepic" src="images/comebuy.png" />
+				
+				<text id = "abouttext">
+				
+					As a barista at Comebuy, I prepared and made specialty
+					tea and coffee based beverages. By working with customers
+					on a daily basis, I gained valuable customer service skills.
+					
+				</text>
+				
+				<h3> Sacristan, Saint Matthew Catholic Church </h3>
+				<h4>San Mateo, CA — September 11 - July 15</h4>
+				
+				<!-- picture in top right -->
+				<img id="hspic" src="images/cross.png" />
+				
+				<text id = "abouttext">
+				
+					As a sacristan, I prepared masses throughout the morning. I 
+					prepared the 7, 10:45, and 12:30 masses and assisted with cleaning. 
+					In between services, I worked in the main office as part-time secretary.
+					
+				</text>
+			
+			</div>
+			
+		</div>
+		
+	<body>
+</html>
