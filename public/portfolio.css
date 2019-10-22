@@ -1,7 +1,7 @@
 /* Creates the banner image and gradient of the background of the page */
 body {
 	
-	background: url("images/banner.png") repeat-x left top, url("images/background.png") no-repeat fixed;
+	background: url("images/background.png") no-repeat fixed;
 	/*url("images/banner.png") repeat-x left top, linear-gradient(black, white, black) no-repeat fixed;*/
 }
 
@@ -13,6 +13,10 @@ body {
 /* Nav bar elements slight black highlight when hovered */
 #navElements li a:hover { 
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+	background: url("images/banner.png") repeat-x left top;
 }
 
 /* Background of active dropdown menu */
@@ -51,15 +55,15 @@ body {
 }
 
 /* Dimensions of the slideshow */
-.container {
-	width: 50%;
-	position: relative;
-	margin: auto;
-	margin-top:50px;
+.djow_container {
+		width: 50%;
+		position: relative;
+		margin: auto;
+		margin-top:50px;
 }
 
 /* Clears the slideshow in the beginning */
-.slideshow {
+.djow_container > .slideshow {
 	display: none;
 	width: 100%;
 }
@@ -84,9 +88,9 @@ body {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Slight offset for right button */
+/* Right aligned for right button */
 .rightButton {
-	right: 14px;
+	right: 0px;
 }
 
 /* How the text at the bottom looks */
