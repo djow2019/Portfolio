@@ -22,65 +22,84 @@
 	<!-- content of the page -->
 	<body>
 	
-		<!-- bootstrap navigation bar-->
-		<nav class = "navbar navbar-transparent">
-		
-			<!-- container of elements in the navbar -->
-			<div class="container-fluid">
-				
-				<!-- bold text on the left side -->
-				<div class ="navbar-header">
-				
-					<!-- toggle button that appears on small screens -->
-					<button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar navbar-inverse"></span>
-						<span class="icon-bar navbar-inverse"></span>
-						<span class="icon-bar navbar-inverse"></span>
-					</button>
-				
-					<h1> Derek Jow </h1>
-					<p>derek.jow@gmail.com</p>
-					<p>650-293-7378</p>
-				</div>
-				
-				<!-- Collapse if screen is too small -->
-				<div class = "collapse navbar-collapse" id="myNavbar">
-				
-					<!-- elements on the right side of the bar -->
-					<ul class = "nav navbar-nav navbar-right" id = "navElements">
-						<li> <a href="index.html"><br><h3>Home</h3></a></li>
-						
-						<li class = "dropdown">
-							<a class = "dropdown-toggle" data-toggle="dropdown" href="#"><br><h3>About</h3></a>
-							<ul class = "dropdown-menu navbar-inverse">
-								<li class = "myDropdown"><a href="about.html">Biography</a></li>
-								<li class = "myDropdown"><a href="education.html">Education</a></li>
-								<li class = "myDropdown"><a href="work.html">Work Experience</a></li>
-								<li class = "myDropdown"><a href="volunteer.html">Volunteer Experience</a></li>
-								<li class = "myDropdown"><a href="skills.html">Skills</a></li>
-							</ul>
-						</li>
-						
-						<li> <a href="activities.html"><br><h3>Activities</h3></a></li>
-						<li> <a href="honors.html"><br><h3>Honors</h3></a></li>
-						<li> <a href="contact.html"><br><h3>Contact</h3></a></li>
-					</ul>
-				</div>
-				
-			</div>
-		</nav>
+		<!-- load header from module -->
+		<header id="myHeader"></header>
 	
 		<!-- wrapper for the text -->
-		<div class="container">
+		<main class="container">
 		
-			<h1>Activities</h1>
+			<h1>Activities and Projects</h1>
 			
 			<!-- text next to picture -->
 			<div class="activities">
-			
+            
+                <h3>Chlambase</h3>
+				<h4>August 2017 - March 2019</h4>
+                
+                <p id = "abouttext">	
+					An open, editable, and centralized Chlamydial model organism database
+                    powered by WikiGenomesDB.	
+				</p>
+                
+                <img src="images/chlambase.png" width="400" height="250" style="float:right"/>
+                
+                <p> Highlights of research experience: </p>
+                <ul>
+                    <li>Implemented reciprocal best match algorithm to compute Chlamydia orthologs</li>
+                    <li>Imported manually curated gene-protein data using Wikidata bots</li>
+                    <li>Developed advanced querying and gene expression widgets displaying</li>
+                        Chlamydial knowledge from Wikidata, NCBI, Expasy, Ensemble, and Excel
+                    <li>Modularized wikigenomes.org to produce dynamically generated model</li>
+                        organism databases, like chlambase.org and myxobase.org
+                </ul>
+                
+                <a class="gitlinks" href="https://chlambase.org/">Chlambase <span class="glyphicon glyphicon-new-window"></span></a>
+            
+                <h3>Meme Master</h3>
+				<h4>Fall 2019</h4>
+                
+                <p id = "abouttext">
+				
+					Individual class project for web client languages. Meme Master allows you to create, edit, and share memes in an
+                    online gallery that can be accessed anywhere! Project demonstrates ES6 custom modules and google firebase.
+					
+				</p>
+                
+                <img src="images/meme_master.png" width="400" height="250" style="float:left; margin-right: 20px"/>
+                
+                <a class="gitlinks" href="https://meme-master-feae2.web.app/">MemeMaster <span class="glyphicon glyphicon-new-window"></span></a>
+                <br>
+                
+                <a class="gitlinks" href="https://github.com/djow2019/MemeMaster">Github MemeMaster <span class="glyphicon glyphicon-new-window"></span></a>
+                
+                <h3>Flashback Music Player</h3>
+				<h4>Winter 2018</h4>
+                
+                <p id = "abouttext">
+				
+					Class project for Software Engineering class. Flashback music player allows users to download music
+                    and play music that is based on location. When each song is played, it is tagged with your current location
+                    and time of day so that you may listen to the same music you played in the same location/time of day the next
+                    time you visit as a flashback! Project demonstrates google firebase, zenhub, and android development.
+					
+				</p>
+                
+                <a class="gitlinks" href="https://github.com/djow2019/FlashbackMusicProject">Github FlashbackMusicPlayer <span class="glyphicon glyphicon-new-window"></span></a>
+            
+                <h3> Chinese American Student Association </h3>
+				<h4>September 2015 - June 2018</h4>
+                
+                <p id = "abouttext">
+				
+					The Chinese American Student Association (CASA) is a cultural, 
+                    social, and community service oriented organization, striving to 
+                    promote the Chinese American culture throughout UCSD and its surrounding community.
+					
+				</p>
+                
 				<h3> Hacktech </h3>
 				<h4>Pasadena, February 2016</h4>
-				<text id = "abouttext">
+				<p id = "abouttext">
 				
 					<!-- picture in top right -->
 					<img id="hspic" src="images/hammer.png" />
@@ -101,9 +120,9 @@
 					<img id="hspic" src="images/gym.png" />
 					<br>
 					
-					<a class="gitlinks" href="https://github.com/djow2019/Youniversity">Github</a>
+					<a class="gitlinks" href="https://github.com/djow2019/Youniversity">Github Youniversity <span class="glyphicon glyphicon-new-window"></span></a>
 					
-				</text>
+				</p>
 				
 				<h3> National Society of Collegiate Scholars </h3>
 				<h4>September 2015 - Present</h4>
@@ -111,17 +130,17 @@
 				<!-- picture in top right -->
 				<img id="hspic" src="images/nscs.png" />
 				
-				<text id = "abouttext">
+				<p id = "abouttext">
 				
 					NSCS is an honor society of undergraduate college students who have an 
 					excellent gpa.
 					
-				</text>
+				</p>
 				
 				<h3> Video Game Programming Club </h3>
 				<h4>September 2014 - May 2015</h4>
 				
-				<text id = "abouttext">
+				<p id = "abouttext">
 				
 					As one of the founding members of the video game programming club at Serra, 
 					I managed our small group over the development of a small rpg nicknamed 
@@ -135,26 +154,30 @@
 					to continue it sometime in the future! 
 					
 					<img id="hspic" src="images/javajesusgame.png" />
-					
-					
+						
 					<br><br>
 					
-					<a class = "gitlinks" href="https://github.com/djow2019/JavaJesus">Github</a>
+					<a class = "gitlinks" href="https://github.com/JavaJesus-Game-Studios/JavaJesus">Github JavaJesus <span class="glyphicon glyphicon-new-window"></span></a>
 					
-				</text>
+				</p>
 				
 				<h3> HP CodeWars </h3>
 				<h4>Palo Alto, March 2015</h4>
-				<text id = "abouttext">
+				<p id = "abouttext">
 				
 					Code Wars is a first-class computer programming competition for high school 
 					students. It presents students with programming challenges in a high-tech setting.
 					
-				</text>
+				</p>
 			
 			</div>
 			
-		</div>
+		</main>
+        
+        <script type="module">
+            import {Header} from "/header.js";
+            new Header(document.getElementById("myHeader"));
+        </script>
 		
 	<body>
 </html>
